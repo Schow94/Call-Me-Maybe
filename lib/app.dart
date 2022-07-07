@@ -52,7 +52,9 @@ class MainTabController extends StatelessWidget {
         ),
         bottomNavigationBar: Container(
           color: Colors.teal[400],
-          child: const TabBar(tabs: tabs),
+          child: const TabBar(
+            tabs: tabs,
+          ),
         ),
       ),
     );

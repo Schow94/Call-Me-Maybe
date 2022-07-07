@@ -39,7 +39,7 @@ class _PredictorState extends State<Predictor> {
           GestureDetector(
             onTap: clickBtn,
             child: Text(
-              'Ask a question..tap fo the answer',
+              'Ask a question..tap for the answer',
               style: Theme.of(context).textTheme.headline6,
             ),
           ),

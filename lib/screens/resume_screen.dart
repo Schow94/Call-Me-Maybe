@@ -91,9 +91,11 @@ class Resume extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
+                    SizedBox(height: 10),
                     Text('NeXT'),
                     Text('steve.jobs@apple.com'),
                     Text('github.com/stevejobs'),
+                    SizedBox(height: 10),
                   ],
                 ),
               ),
@@ -120,9 +122,11 @@ class Resume extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
+                    SizedBox(height: 10),
                     Text('NeXT'),
                     Text('steve.jobs@apple.com'),
                     Text('github.com/stevejobs'),
+                    SizedBox(height: 10),
                   ],
                 ),
               ),
@@ -149,9 +153,11 @@ class Resume extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
+                    SizedBox(height: 10),
                     Text('NeXT'),
                     Text('steve.jobs@apple.com'),
                     Text('github.com/stevejobs'),
+                    SizedBox(height: 10),
                   ],
                 ),
               ),
@@ -178,9 +184,11 @@ class Resume extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
+                    SizedBox(height: 10),
                     Text('NeXT'),
                     Text('steve.jobs@apple.com'),
                     Text('github.com/stevejobs'),
+                    SizedBox(height: 10),
                   ],
                 ),
               ),
@@ -207,9 +215,11 @@ class Resume extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
+                    SizedBox(height: 10),
                     Text('NeXT'),
                     Text('steve.jobs@apple.com'),
                     Text('github.com/stevejobs'),
+                    SizedBox(height: 10),
                   ],
                 ),
               ),
