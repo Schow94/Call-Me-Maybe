@@ -7,3 +7,4 @@ Establish a productive comfort level with the Flutter SDK by mastering the basic
 ### What the application does
 
 Implement a program that combines a business card, resume, and "will I get called for the job?" predictor that has a structure demonstrated here
+![Week 0506 Project 03 Example](https://user-images.githubusercontent.com/24352472/177689455-11ddde90-e5c3-427e-a0c3-90c000c5f45e.gif)
