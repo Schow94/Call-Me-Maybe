@@ -26,16 +26,30 @@ class _PredictorState extends State<Predictor> {
   Widget build(BuildContext context) {
     String text = textOptions[rand];
 
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text('Call Me...Maybe?'),
-        GestureDetector(
-          onTap: clickBtn,
-          child: Text('Ask a question..tap fo the answer'),
-        ),
-        Text(text),
-      ],
+    return Container(
+      margin: EdgeInsets.all(20),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            'Call Me...Maybe?',
+            style: Theme.of(context).textTheme.headline4,
+          ),
+          SizedBox(height: 50),
+          GestureDetector(
+            onTap: clickBtn,
+            child: Text(
+              'Ask a question..tap fo the answer',
+              style: Theme.of(context).textTheme.headline6,
+            ),
+          ),
+          SizedBox(height: 50),
+          Text(
+            text,
+            style: Theme.of(context).textTheme.headline4,
+          ),
+        ],
+      ),
     );
   }
 

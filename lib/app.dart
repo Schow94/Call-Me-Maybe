@@ -10,7 +10,12 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Call Me Maybe',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        textTheme: TextTheme(
+          headline4: TextStyle(color: Colors.pinkAccent),
+        ),
+      ),
       home: MainTabController(),
     );
   }
