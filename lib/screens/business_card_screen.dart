@@ -13,38 +13,80 @@ class BusinessCard extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(20.0),
-              child: FractionallySizedBox(
-                child: Image.asset(
-                  'assets/images/stevejobs.jpeg',
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    topRight: Radius.circular(10),
+                    bottomLeft: Radius.circular(10),
+                    bottomRight: Radius.circular(10)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(-1, 5), // changes position of shadow
+                  ),
+                ],
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(20.0),
+                child: FractionallySizedBox(
+                  child: Image.asset(
+                    'assets/images/stevejobs.jpeg',
+                  ),
                 ),
               ),
             ),
-            Text(
-              'Steve Jobs',
-              style: Theme.of(context).textTheme.headline2,
-            ),
-            Text(
-              'Technology Extraordinaire',
-              style: Theme.of(context).textTheme.headline5,
-            ),
-            Text(
-              '(415) 359-3432',
-              style: Theme.of(context).textTheme.headline6,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Text(
-                  'github.com/SteveJobs',
-                  style: Theme.of(context).textTheme.bodyText2,
-                ),
-                Text(
-                  'steve.jobs@apple.com',
-                  style: Theme.of(context).textTheme.bodyText2,
-                ),
-              ],
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    topRight: Radius.circular(10),
+                    bottomLeft: Radius.circular(10),
+                    bottomRight: Radius.circular(10)),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 5,
+                    blurRadius: 7,
+                    offset: Offset(-1, 5), // changes position of shadow
+                  ),
+                ],
+              ),
+              child: Column(
+                children: [
+                  const SizedBox(height: 20),
+                  Text(
+                    'Steve Jobs',
+                    style: Theme.of(context).textTheme.headline3,
+                  ),
+                  Text(
+                    'Technology Extraordinaire',
+                    style: Theme.of(context).textTheme.headline6,
+                  ),
+                  Text(
+                    '(415) 359-3432',
+                    style: Theme.of(context).textTheme.headline6,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text(
+                        'github.com/SteveJobs',
+                        style: Theme.of(context).textTheme.bodyText2,
+                      ),
+                      Text(
+                        'steve.jobs@apple.com',
+                        style: Theme.of(context).textTheme.bodyText2,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+                ],
+              ),
             ),
           ],
         ),

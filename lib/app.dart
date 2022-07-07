@@ -11,8 +11,8 @@ class App extends StatelessWidget {
     return MaterialApp(
       title: 'Call Me Maybe',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Colors.grey[200],
+        primarySwatch: Colors.teal,
+        scaffoldBackgroundColor: Color.fromARGB(255, 248, 248, 248),
         textTheme: TextTheme(
           headline4: TextStyle(color: Colors.grey[600]),
         ),
@@ -50,7 +50,7 @@ class MainTabController extends StatelessWidget {
           children: screens,
         ),
         bottomNavigationBar: Container(
-          color: Colors.blue,
+          color: Colors.teal[400],
           child: const TabBar(tabs: tabs),
         ),
       ),
