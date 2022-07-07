@@ -1,17 +1,9 @@
-# project3
+# CS492 - Project #3: Call Me Maybe
 
-A new Flutter project.
+### Prompt
 
-## Getting Started
+Establish a productive comfort level with the Flutter SDK by mastering the basic ingredients found in every application. Build a straightforward three-tab application. Practice applying the concepts of widgets, layouts, images, fonts, and themes. Enhance your application with responsive design, basic navigation, state, and third-party packages.
 
-This project is a starting point for a Flutter application.
+### What the application does
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Call-Me-Maybe
+Implement a program that combines a business card, resume, and "will I get called for the job?" predictor that has a structure demonstrated here
