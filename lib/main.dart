@@ -11,6 +11,8 @@ import 'app.dart';
 
 void main() {
   // Allow these orientations on device
+  WidgetsFlutterBinding.ensureInitialized();
+
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.landscapeLeft,
     DeviceOrientation.landscapeRight,

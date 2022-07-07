@@ -13,19 +13,19 @@ class App extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         textTheme: TextTheme(
-          headline4: TextStyle(color: Colors.pinkAccent),
+          headline4: TextStyle(color: Colors.grey[600]),
         ),
       ),
-      home: MainTabController(),
+      home: const MainTabController(),
     );
   }
 }
 
 class MainTabController extends StatelessWidget {
   static const tabs = [
-    Tab(text: 'Business Card'),
-    Tab(text: 'Resume'),
-    Tab(text: 'Predictor'),
+    Tab(icon: Icon(Icons.credit_card)),
+    Tab(icon: Icon(Icons.event_note)),
+    Tab(icon: Icon(Icons.question_mark)),
   ];
   static const screens = [
     BusinessCard(),
