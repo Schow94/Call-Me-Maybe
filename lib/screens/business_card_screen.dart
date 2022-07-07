@@ -15,8 +15,10 @@ class BusinessCard extends StatelessWidget {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(20.0),
-              child: Image.asset(
-                'assets/images/stevejobs.jpeg',
+              child: FractionallySizedBox(
+                child: Image.asset(
+                  'assets/images/stevejobs.jpeg',
+                ),
               ),
             ),
             Text(
