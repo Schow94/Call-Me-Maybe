@@ -12,6 +12,7 @@ class App extends StatelessWidget {
       title: 'Call Me Maybe',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        scaffoldBackgroundColor: Colors.grey[200],
         textTheme: TextTheme(
           headline4: TextStyle(color: Colors.grey[600]),
         ),
@@ -27,6 +28,7 @@ class MainTabController extends StatelessWidget {
     Tab(icon: Icon(Icons.event_note)),
     Tab(icon: Icon(Icons.question_mark)),
   ];
+
   static const screens = [
     BusinessCard(),
     Resume(),
@@ -43,12 +45,13 @@ class MainTabController extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Call Me Maybe'),
-          bottom: const TabBar(
-            tabs: tabs,
-          ),
         ),
         body: const TabBarView(
           children: screens,
+        ),
+        bottomNavigationBar: Container(
+          color: Colors.blue,
+          child: const TabBar(tabs: tabs),
         ),
       ),
     );
