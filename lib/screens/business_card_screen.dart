@@ -69,7 +69,7 @@ class BusinessCard extends StatelessWidget {
                   ),
                   Text(
                     '(415) 359-3432',
-                    style: Theme.of(context).textTheme.headline6,
+                    style: Theme.of(context).textTheme.labelMedium,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
