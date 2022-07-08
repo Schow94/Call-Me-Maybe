@@ -69,7 +69,7 @@ class BusinessCard extends StatelessWidget {
                     style: Theme.of(context).textTheme.headline6,
                   ),
                   GestureDetector(
-                    onTap: () => _launchUrl(Uri.parse('sms:5555555555')),
+                    onTap: () => _launchUrl(Uri.parse('sms:4153593432')),
                     child: Text(
                       '(415) 359-3432',
                       style: Theme.of(context).textTheme.labelMedium,
@@ -78,9 +78,13 @@ class BusinessCard extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Text(
-                        'github.com/SteveJobs',
-                        style: Theme.of(context).textTheme.bodyText2,
+                      GestureDetector(
+                        onTap: () =>
+                            pressed(Uri.parse('https://github.com/Schow94')),
+                        child: Text(
+                          'github.com/SteveJobs',
+                          style: Theme.of(context).textTheme.bodyText2,
+                        ),
                       ),
                       Text(
                         'steve.jobs@apple.com',
@@ -100,7 +104,10 @@ class BusinessCard extends StatelessWidget {
 }
 
 void _launchUrl(_url) async {
-  print('Clicked');
-
   if (!await launchUrl(_url)) print('Could not launch $_url');
+}
+
+void pressed(url) async {
+  print('Clicked');
+  if (!await launchUrl(url)) print('Could not launch $url');
 }
