@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class BusinessCard extends StatelessWidget {
   const BusinessCard({Key? key}) : super(key: key);
@@ -67,9 +68,12 @@ class BusinessCard extends StatelessWidget {
                     'Technology Extraordinaire',
                     style: Theme.of(context).textTheme.headline6,
                   ),
-                  Text(
-                    '(415) 359-3432',
-                    style: Theme.of(context).textTheme.labelMedium,
+                  GestureDetector(
+                    onTap: () => _launchUrl(Uri.parse('sms:5555555555')),
+                    child: Text(
+                      '(415) 359-3432',
+                      style: Theme.of(context).textTheme.labelMedium,
+                    ),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -93,4 +97,10 @@ class BusinessCard extends StatelessWidget {
       ),
     );
   }
+}
+
+void _launchUrl(_url) async {
+  print('Clicked');
+
+  if (!await launchUrl(_url)) print('Could not launch $_url');
 }
