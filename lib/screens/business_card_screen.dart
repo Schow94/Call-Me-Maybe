@@ -2,10 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class BusinessCard extends StatelessWidget {
+  // Map<String, dynamic> data = {};
+
   const BusinessCard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    // print(json);
+    // I think I have to have a Stateful Widget to pass json/Map to Widgets
+
     return FractionallySizedBox(
       heightFactor: 0.95,
       widthFactor: 0.95,

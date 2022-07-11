@@ -57,7 +57,5 @@ class _PredictorState extends State<Predictor> {
     setState(() {
       rand = Random().nextInt(textOptions.length);
     });
-
-    print(rand);
   }
 }
