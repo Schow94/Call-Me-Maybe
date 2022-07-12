@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
+import 'package:project3/widgets/random_text.dart';
+
 class Predictor extends StatefulWidget {
   const Predictor({Key? key}) : super(key: key);
 
@@ -44,10 +46,7 @@ class _PredictorState extends State<Predictor> {
             ),
           ),
           SizedBox(height: 50),
-          Text(
-            text,
-            style: Theme.of(context).textTheme.headline4,
-          ),
+          RandomText(text: textOptions[rand]),
         ],
       ),
     );

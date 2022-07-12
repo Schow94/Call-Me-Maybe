@@ -55,10 +55,9 @@ class ResumeItem extends StatelessWidget {
                     Text(location),
                   ],
                 ),
-                Text(
-                  'Took an idea from small startup founded out of my garage to a trillion dollar company',
-                ),
                 SizedBox(height: 10),
+                Text(duties),
+                SizedBox(height: 20),
               ],
             ),
           ),
