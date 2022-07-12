@@ -19,13 +19,12 @@ class _PredictorState extends State<Predictor> {
     return Container(
       margin: EdgeInsets.all(20),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           Text(
             'Call Me...Maybe?',
             style: Theme.of(context).textTheme.headline4,
           ),
-          SizedBox(height: 50),
           GestureDetector(
             onTap: () => clickBtn(),
             child: Text(
@@ -33,7 +32,6 @@ class _PredictorState extends State<Predictor> {
               style: Theme.of(context).textTheme.headline6,
             ),
           ),
-          SizedBox(height: 50),
           RandomText(text: phrase.randPhrase),
         ],
       ),
