@@ -25,7 +25,7 @@ class ContactInfo extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const SizedBox(height: 20),
+          const SizedBox(height: 10),
           Text(
             'Steve Jobs',
             style: Theme.of(context).textTheme.headline3,
