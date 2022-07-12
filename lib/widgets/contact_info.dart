@@ -35,7 +35,7 @@ class ContactInfo extends StatelessWidget {
             style: Theme.of(context).textTheme.headline6,
           ),
           GestureDetector(
-            onTap: () => _launchUrl(Uri.parse('sms:4153593432')),
+            onTap: () => launchSMS(Uri.parse('sms:4153593432')),
             child: Text(
               '(415) 359-3432',
               style: Theme.of(context).textTheme.labelMedium,
@@ -45,7 +45,8 @@ class ContactInfo extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               GestureDetector(
-                onTap: () => pressed(Uri.parse('https://github.com/Schow94')),
+                onTap: () =>
+                    launchGithub(Uri.parse('https://github.com/Schow94')),
                 child: Text(
                   'github.com/SteveJobs',
                   style: Theme.of(context).textTheme.bodyText2,
@@ -64,10 +65,10 @@ class ContactInfo extends StatelessWidget {
   }
 }
 
-void _launchUrl(_url) async {
+void launchSMS(_url) async {
   if (!await launchUrl(_url)) print('Could not launch $_url');
 }
 
-void pressed(url) async {
+void launchGithub(url) async {
   if (!await launchUrl(url)) print('Could not launch $url');
 }
