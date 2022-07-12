@@ -68,7 +68,7 @@ class MainTabController extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Call Me Maybe'),
         ),
-        body: TabBarView(
+        body: const TabBarView(
           children: screens,
         ),
         bottomNavigationBar: Container(

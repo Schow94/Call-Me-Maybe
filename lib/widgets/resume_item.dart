@@ -33,32 +33,35 @@ class ResumeItem extends StatelessWidget {
               ),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey.withOpacity(0.3),
+                  color: Color.fromARGB(255, 145, 206, 200).withOpacity(0.3),
                   spreadRadius: 1,
                   blurRadius: 3,
                   offset: Offset(-2, 2), // changes position of shadow
                 ),
               ],
             ),
-            child: Column(
-              children: [
-                SizedBox(height: 10),
-                Text(
-                  title,
-                  style: Theme.of(context).textTheme.headline6,
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
-                  children: [
-                    Text(company),
-                    Text(years),
-                    Text(location),
-                  ],
-                ),
-                SizedBox(height: 10),
-                Text(duties),
-                SizedBox(height: 20),
-              ],
+            child: Container(
+              margin: EdgeInsets.all(10),
+              child: Column(
+                children: [
+                  Text(
+                    title,
+                    style: Theme.of(context).textTheme.headline6,
+                  ),
+                  SizedBox(height: 10),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Text(company),
+                      Text(years),
+                      Text(location),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  Text(duties),
+                  SizedBox(height: 10),
+                ],
+              ),
             ),
           ),
         ),

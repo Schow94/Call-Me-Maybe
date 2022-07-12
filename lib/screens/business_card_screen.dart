@@ -14,7 +14,7 @@ class BusinessCard extends StatelessWidget {
       heightFactor: 1,
       widthFactor: 1,
       child: Padding(
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
