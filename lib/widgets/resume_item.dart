@@ -45,7 +45,7 @@ class ResumeItem extends StatelessWidget {
                 SizedBox(height: 10),
                 Text(
                   title,
-                  style: Theme.of(context).textTheme.titleMedium,
+                  style: Theme.of(context).textTheme.headline6,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
