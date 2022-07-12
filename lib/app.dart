@@ -7,7 +7,7 @@ import 'package:project3/screens/business_card_screen.dart';
 import 'package:project3/screens/resume_screen.dart';
 import 'package:project3/screens/predictor_screen.dart';
 
-const json_file = 'assets/data.json';
+const jsonFile = 'assets/data.json';
 
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -45,7 +45,7 @@ class MainTabController extends StatelessWidget {
   // ----------------- Not sure if this should be saved to state -----------------
 // Fetch content from the json file
   Future<void> readJson() async {
-    final String response = await rootBundle.loadString(json_file);
+    final String response = await rootBundle.loadString(jsonFile);
     final data = await json.decode(response);
     name = data['name'];
   }

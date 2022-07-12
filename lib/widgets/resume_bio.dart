@@ -15,7 +15,6 @@ class ResumeBio extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: 20),
         Text(
           name,
           style: Theme.of(context).textTheme.headlineSmall,
