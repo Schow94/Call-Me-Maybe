@@ -8,6 +8,7 @@ class RandomText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
+      textAlign: TextAlign.center,
       style: Theme.of(context).textTheme.headline4,
     );
   }

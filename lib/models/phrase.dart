@@ -11,6 +11,9 @@ final textOptions = [
   "If you believe it, it will happen"
 ];
 
+/*
+  - Encapsulate Random Phrase logic in a Model to keep random logic separate from UI
+*/
 class Phrase {
   final Random random = Random();
   final int randNum;
