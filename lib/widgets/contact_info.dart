@@ -52,12 +52,12 @@ class ContactInfo extends StatelessWidget {
                     launchGithub(Uri.parse('https://github.com/Schow94')),
                 child: const Text(
                   'github.com/SteveJobs',
-                  style: TextStyle(fontSize: 15.0),
+                  style: TextStyle(fontSize: 13.0),
                 ),
               ),
               const Text(
                 'steve.jobs@apple.com',
-                style: TextStyle(fontSize: 15.0),
+                style: TextStyle(fontSize: 13.0),
               ),
             ],
           ),

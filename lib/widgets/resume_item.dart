@@ -33,32 +33,45 @@ class ResumeItem extends StatelessWidget {
               ),
               boxShadow: [
                 BoxShadow(
-                  color: Color.fromARGB(255, 145, 206, 200).withOpacity(0.3),
+                  color:
+                      const Color.fromARGB(255, 145, 206, 200).withOpacity(0.3),
                   spreadRadius: 1,
                   blurRadius: 3,
-                  offset: Offset(-2, 2), // changes position of shadow
+                  offset: const Offset(-2, 2), // changes position of shadow
                 ),
               ],
             ),
             child: Container(
-              margin: EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               child: Column(
                 children: [
                   Text(
                     title,
                     style: Theme.of(context).textTheme.headline6,
                   ),
-                  SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Text(company),
-                      Text(years),
-                      Text(location),
+                      Text(
+                        company,
+                        style: const TextStyle(fontSize: 12.0),
+                      ),
+                      Text(
+                        years,
+                        style: const TextStyle(fontSize: 12.0),
+                      ),
+                      Text(
+                        location,
+                        style: const TextStyle(fontSize: 12.0),
+                      ),
                     ],
                   ),
-                  SizedBox(height: 10),
-                  Text(duties),
+                  const SizedBox(height: 10),
+                  Text(
+                    duties,
+                    style: const TextStyle(fontSize: 12.0),
+                  ),
                 ],
               ),
             ),
