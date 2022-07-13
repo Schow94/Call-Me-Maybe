@@ -19,7 +19,7 @@ class ResumeItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(height: 20),
+        SizedBox(height: 10),
         FractionallySizedBox(
           widthFactor: 1,
           child: Container(
@@ -59,7 +59,6 @@ class ResumeItem extends StatelessWidget {
                   ),
                   SizedBox(height: 10),
                   Text(duties),
-                  SizedBox(height: 10),
                 ],
               ),
             ),

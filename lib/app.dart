@@ -21,8 +21,9 @@ class App extends StatelessWidget {
         scaffoldBackgroundColor: Color.fromARGB(255, 248, 248, 248),
         textTheme: TextTheme(
           headline4: TextStyle(color: Colors.grey[600]),
-          // headline3: TextStyle(color: Colors.teal[300]),
-          headline6: TextStyle(color: Color.fromARGB(255, 18, 187, 189)),
+          headline3: const TextStyle(fontSize: 38.0),
+          headline6: const TextStyle(
+              fontSize: 18.0, color: Color.fromARGB(255, 18, 187, 189)),
         ),
       ),
       home: MainTabController(),

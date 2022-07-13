@@ -24,41 +24,44 @@ class ContactInfo extends StatelessWidget {
         ],
       ),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          const SizedBox(height: 10),
           Text(
             'Steve Jobs',
             style: Theme.of(context).textTheme.headline3,
           ),
+          const SizedBox(height: 5),
           Text(
             'Technology Extraordinaire',
             style: Theme.of(context).textTheme.headline6,
           ),
+          const SizedBox(height: 10),
           GestureDetector(
             onTap: () => launchSMS(Uri.parse('sms:4153593432')),
-            child: Text(
+            child: const Text(
               '(415) 359-3432',
-              style: Theme.of(context).textTheme.labelMedium,
+              style: TextStyle(fontSize: 14.0),
             ),
           ),
+          const SizedBox(height: 5),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               GestureDetector(
                 onTap: () =>
                     launchGithub(Uri.parse('https://github.com/Schow94')),
-                child: Text(
+                child: const Text(
                   'github.com/SteveJobs',
-                  style: Theme.of(context).textTheme.bodyText2,
+                  style: TextStyle(fontSize: 15.0),
                 ),
               ),
-              Text(
+              const Text(
                 'steve.jobs@apple.com',
-                style: Theme.of(context).textTheme.bodyText2,
+                style: TextStyle(fontSize: 15.0),
               ),
             ],
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 10),
         ],
       ),
     );

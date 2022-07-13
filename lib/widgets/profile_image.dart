@@ -19,9 +19,23 @@ class ProfileImage extends StatelessWidget {
         ],
       ),
       child: CircleAvatar(
-        radius: MediaQuery.of(context).size.height * 0.1,
+        radius: radius(context),
         backgroundImage: const AssetImage('assets/images/stevejobs.jpeg'),
       ),
     );
+  }
+
+  /*
+    - Adjust CircularAvatar radius depending if in portrait or landscape mode
+  */
+  double radius(BuildContext context) {
+    // Landscape
+    if (MediaQuery.of(context).orientation == Orientation.landscape) {
+      return MediaQuery.of(context).size.width * 0.06;
+    }
+    // Portrait
+    else {
+      return MediaQuery.of(context).size.height * 0.25;
+    }
   }
 }
