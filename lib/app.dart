@@ -37,9 +37,6 @@ class App extends StatelessWidget {
 }
 
 class MainTabController extends StatelessWidget {
-  final Map<String, dynamic> data = {};
-  String name = '';
-
   static const tabs = [
     Tab(icon: Icon(Icons.credit_card)),
     Tab(icon: Icon(Icons.event_note)),
@@ -47,14 +44,6 @@ class MainTabController extends StatelessWidget {
   ];
 
   MainTabController();
-
-  // ----------------- Not sure if this should be saved to state -----------------
-// Fetch content from the json file
-  Future<void> readJson() async {
-    final String response = await rootBundle.loadString(jsonFile);
-    final data = await json.decode(response);
-    name = data['name'];
-  }
 
   static const screens = [
     BusinessCard(),
@@ -64,9 +53,6 @@ class MainTabController extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // readJson();
-    // print('JSON DATA: $name');
-
     return DefaultTabController(
       length: tabs.length,
       initialIndex: 0,

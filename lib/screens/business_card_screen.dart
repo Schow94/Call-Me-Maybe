@@ -7,9 +7,6 @@ class BusinessCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // print(json);
-    // I think I have to have a Stateful Widget to pass json/Map to Widgets
-
     return FractionallySizedBox(
       heightFactor: 1,
       widthFactor: 1,
